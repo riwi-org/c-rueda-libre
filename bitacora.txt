@@ -5,3 +5,12 @@ Port: 63342
 Path: /c-rueda-libre/index.html
 Request method: GET
 Status code: 200 OK
+
+------------------------------------------------------------------------
+
+When I type /promociones.html at the end of my URL it shows 404 response status code,
+which means it's a client error response, Not Found, the server couldn't find the requested
+resource
+
+
+------------------------------------------------------------------------
