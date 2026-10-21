@@ -5,3 +5,20 @@ Port: 63342
 Path: /c-rueda-libre/index.html
 Request method: GET
 Status code: 200 OK
+
+------------------------------------------------------------------------
+
+When I type /promociones.html at the end of my URL it shows 404 response status code,
+which means it's a client error response, Not Found, the server couldn't find the requested
+resource
+
+
+------------------------------------------------------------------------
+
+HTML: it will be useful for the whole project structure, helping us to create tables, forms and
+navigating through different pages.
+
+CSS: used for setting styles, designing how the colors will be and the font.
+
+JavaScript: all the functionalities, we can request something by pressing a specific button, we
+can await things to happen to load a specific thing we want to show after that.
