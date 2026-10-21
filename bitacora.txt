@@ -1,0 +1,7 @@
+URL: http://localhost:63342/c-rueda-libre/index.html
+Protocol: HTTP/1.1
+Host: localhost:63342
+Port: 63342
+Path: /c-rueda-libre/index.html
+Request method: GET
+Status code: 200 OK
