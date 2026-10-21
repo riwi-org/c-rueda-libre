@@ -14,3 +14,11 @@ resource
 
 
 ------------------------------------------------------------------------
+
+HTML: it will be useful for the whole project structure, helping us to create tables, forms and
+navigating through different pages.
+
+CSS: used for setting styles, designing how the colors will be and the font.
+
+JavaScript: all the functionalities, we can request something by pressing a specific button, we
+can await things to happen to load a specific thing we want to show after that.
