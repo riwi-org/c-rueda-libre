@@ -6,6 +6,7 @@
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
 </head>
 <body>
+
 <header>
     <!--navbar-->
     <nav>
@@ -16,110 +17,101 @@
         </ul>
     </nav>
     <hr>
-    <!--navegacion dentro de index-->
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#qsomos">¿Quiénes somos?</a></li>
-        <li><a href="#servicios">Nuestros servicios</a></li>
-        <li><a href="#alquilar">¿Cómo alquilar?</a></li>
-        <li><a href="#encuentranos">Encuéntranos</a></li>
-    </ul>
 </header>
+<main>
+    <nav>
+        <!--navegacion dentro de index-->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#qsomos">¿Quiénes somos?</a></li>
+            <li><a href="#servicios">Nuestros servicios</a></li>
+            <li><a href="#alquilar">¿Cómo alquilar?</a></li>
+            <li><a href="#encuentranos">Encuéntranos</a></li>
+        </ul>
+    </nav>
+    <!--hero-->
+    <section>
+        <div class="hero">
+            <h1>Rueda libre</h1>
+            <p>Bienvenido al mejor alquiler de bicicletas de la ciudad</p>
+            <img src="img/bicicleta_rueda_libre.png" alt="portada" height="500px" width="550px">
+        </div>
+    </section>
+    <hr>
 
-<!--hero-->
-<section>
-    <div class="hero">
-        <h1>Rueda libre</h1>
-        <p>Bienvenido al mejor alquiler de bicicletas de la ciudad</p>
-        <img src="img/bicicleta_rueda_libre.png" alt="portada" height="500px" width="550px">
-    </div>
-</section>
-<hr>
-
-<!--quienes somos-->
-<section id="qsomos">
-    <div class="qsomos">
+    <!--quienes somos-->
+    <section id="qsomos">
         <h2><em>¿Quiénes somos?</em></h2>
         <p>Somos una empresa paisa apasionada por la movilidad sostenible, el deporte y el turismo urbano. En Rueda
             Libre conectamos a locales y visitantes con los mejores espacios de Medellín a través de bicicletas seguras,
             cómodas y listas para rodar, promoviendo un estilo de vida saludable y amigable con el medio ambiente.</p>
-    </div>
-</section>
-<hr>
+    </section>
+    <hr>
 
-<!--servicios-->
-<section id="servicios">
-    <div class="servicios">
+    <!--servicios-->
+    <section id="servicios">
         <h2><em>Nuestros servicios</em></h2>
 
-        <div class="alquiler-bicicleta">
+        <!--articulo alquilar-->
+        <article>
             <h3>Alquiler de bicicletas</h3>
             <p>Contamos con una flota moderna de bicicletas urbanas y de montaña para que <strong>recorras la
                 ciudad</strong> a tu propio ritmo, ya sea por horas o por días completos.</p>
             <img src="img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" width="400px" height="350px">
             <a href="paginas/tarifas.html#tabla_tarifas">Consulta las tarifas acá</a>
+        </article>
 
-
-        </div>
-        <div class="recorrido-guiado">
+        <!--articulo recorrido guiado-->
+        <article>
             <h3>Recorrido guiado</h3>
-            <p>Disfruta de nuestros tours guiados donde <strong>descubrirás la historia</strong>, el arte urbano y los
+            <p>Disfruta de nuestros tours guiados donde <strong>descubrirás la historia</strong>, el arte urbano y
+                los
                 rincones más emblemáticos de Medellín de manera segura.</p>
             <img src="img/ruta_bicicleta_guiada_rueda_libre.png" alt="ruta" width="400px" height="350px">
             <a href="paginas/tarifas.html#tabla-recorridos">Consulta los recorridos acá</a>
-        </div>
-        <div class="taller-basico">
+        </article>
+
+        <!--articulo taller-->
+        <article>
             <h3>Taller básico</h3>
             <p>Ofrecemos servicio de <strong>mantenimiento preventivo, ajuste de frenos y cambios</strong> para que tu
                 bicicleta siempre ruede en óptimas condiciones.</p>
             <img src="img/taller_basico_rueda_libre.png" alt="bicicleta_taller" width="400px" height="350px">
-        </div>
-        <div class="beneficios">
+        </article>
+
+        <!--articulo beneficios-->
+        <article>
             <h4>Beneficios de usar nuestros servicios</h4>
-            <div class="beneficios-servicio">
-                <ul>
-                    <li>Tarifas económicas y accesibles para todos.</li>
-                    <li>Equipamiento de seguridad incluido (casco y kit básico).</li>
-                    <li>Asistencia vial durante tu recorrido en la ciudad.</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Tarifas económicas y accesibles para todos.</li>
+                <li>Equipamiento de seguridad incluido (casco y kit básico).</li>
+                <li>Asistencia vial durante tu recorrido en la ciudad.</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
 
-        </div>
-    </div>
-</section>
-<hr>
-
-<!--como alquilar-->
-<section id="alquilar">
-    <div class="alquilar">
+    <!--como alquilar-->
+    <section id="alquilar">
         <h2><em>¿Cómo alquilar?</em></h2>
         <p>Sigue estos pasos para poder alquilar una bicicleta:</p>
-        <div class="pasos-alquilar">
-            <ol>
-                <li>Acércate a nuestra sede principal o contáctanos de forma digital.</li>
-                <li>Presenta tu documento de identidad vigente y un depósito de garantía.</li>
-                <li>Elige la bicicleta que mejor se adapte a tu estatura y tipo de ruta.</li>
-                <li>¡Disfruta del recorrido y devuélvela al finalizar el tiempo acordado!</li>
-            </ol>
-        </div>
+        <ol>
+            <li>Acércate a nuestra sede principal o contáctanos de forma digital.</li>
+            <li>Presenta tu documento de identidad vigente y un depósito de garantía.</li>
+            <li>Elige la bicicleta que mejor se adapte a tu estatura y tipo de ruta.</li>
+            <li>¡Disfruta del recorrido y devuélvela al finalizar el tiempo acordado!</li>
+        </ol>
+    </section>
+    <hr>
 
-    </div>
-</section>
-<hr>
-
-<!--encuentranos-->
-<section id="encuentranos">
-    <div class="encuentranos">
+    <!--encuentranos-->
+    <section id="encuentranos">
         <h2>¿Dónde encontranos?</h2>
-        <div class="mapa">
-            <a href="https://www.google.com/maps/place/Riwi/@6.219101,-75.5861898,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44293f0e114eef:0x99610cdd44c7c081!8m2!3d6.219101!4d-75.5836149!16s%2Fg%2F11l2x8f5ch?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"
-               target="_blank">Sede principal</a>
-        </div>
-
-    </div>
-</section>
-<hr>
-
+        <a href="https://www.google.com/maps/place/Riwi/@6.219101,-75.5861898,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44293f0e114eef:0x99610cdd44c7c081!8m2!3d6.219101!4d-75.5836149!16s%2Fg%2F11l2x8f5ch?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank">Sede principal</a>
+    </section>
+    <hr>
+</main>
 <footer>
     <h4>Rueda Libre</h4>
     <a href="mailto:juan.david.carreno.arias01@gmail.com">Contacto</a>

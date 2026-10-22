@@ -6,7 +6,9 @@
     <title>Tarifas</title>
 </head>
 <body>
+
 <header>
+    <!--navbar-->
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -14,89 +16,103 @@
             <li><a href="reservas.html">Reservas</a></li>
         </ul>
     </nav>
-    <h1>Tabla de tarifas - Rueda Libre</h1>
-    <img src="../img/portada_rueda_libre.png" alt="logo" height="300px" width="300px">
 </header>
+<main>
+    <h1>Tabla de tarifas - Rueda Libre</h1>
+    <img src="../img/portada_rueda_libre.png" alt="logo de rueda libre" height="300px" width="300px">
+    <!--tarifas-->
+    <section id="sec-tarifas">
+        <!--tabla tarifas-->
+        <table id="tabla_tarifas">
+            <caption>Tabla tarifas</caption>
+            <thead>
+            <tr>
+                <th>Tipo de bicicleta</th>
+                <th>1 hora</th>
+                <th>Medio dia (4h)</th>
+                <th>Día completo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Urbana</th>
+                <td>$10.000</td>
+                <td>$30.000</td>
+                <td>$50.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Montaña</th>
+                <td>$15.000</td>
+                <td>$45.000</td>
+                <td>$70.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Eléctrica</th>
+                <td>$25.000</td>
+                <td>$70.000</td>
+                <td>$110.000</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
 
+    <!--recorridos guiados-->
+    <section id="sec-recorridos">
+        <!--tabla recorridos-->
+        <table id="tabla-recorridos">
+            <caption>Tabla recorridos guiados</caption>
+            <thead>
+            <tr>
+                <th scope="col">Recorrido</th>
+                <th scope="col">Distancia</th>
+                <th scope="col">Duración</th>
+                <th scope="col">Nivel</th>
+                <th scope="col">Precio por persona</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Ríos y Parques</th>
+                <td>12 km</td>
+                <td>2 h</td>
+                <td>Fácil</td>
+                <td>$45.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Sabores de Barrio</th>
+                <td>18 km</td>
+                <td>3 h</td>
+                <td>Medio</td>
+                <td>$60.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Reto Las Palmas</th>
+                <td>25 km</td>
+                <td>4 h</td>
+                <td>Difícil</td>
+                <td>$85.000</td>
+            </tr>
+            </tbody>
+        </table>
 
-<!--tabla tarifas-->
-<table id="tabla_tarifas">
-    <caption>Tabla tarifas</caption>
-    <thead>
-    <tr>
-        <th>Tipo de bicicleta</th>
-        <th>1 hora</th>
-        <th>Medio dia (4h)</th>
-        <th>Día completo</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">Urbana</th>
-        <td>$10.000</td>
-        <td>$30.000</td>
-        <td>$50.000</td>
-    </tr>
-    <tr>
-        <th scope="row">Montaña</th>
-        <td>$15.000</td>
-        <td>$45.000</td>
-        <td>$70.000</td>
-    </tr>
-    <tr>
-        <th scope="row">Eléctrica</th>
-        <td>$25.000</td>
-        <td>$70.000</td>
-        <td>$110.000</td>
-    </tr>
-    </tbody>
-</table>
-<hr>
-<!--tabla recorridos-->
-<table id="tabla-recorridos">
-    <caption>Tabla recorridos guiados</caption>
-    <thead>
-    <tr>
-        <th scope="col">Recorrido</th>
-        <th scope="col">Distancia</th>
-        <th scope="col">Duración</th>
-        <th scope="col">Nivel</th>
-        <th scope="col">Precio por persona</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">Ríos y Parques</th>
-        <td>12 km</td>
-        <td>2 h</td>
-        <td>Fácil</td>
-        <td>$45.000</td>
-    </tr>
-    <tr>
-        <th scope="row">Sabores de Barrio</th>
-        <td>18 km</td>
-        <td>3 h</td>
-        <td>Medio</td>
-        <td>$60.000</td>
-    </tr>
-    <tr>
-        <th scope="row">Reto Las Palmas</th>
-        <td>25 km</td>
-        <td>4 h</td>
-        <td>Difícil</td>
-        <td>$85.000</td>
-    </tr>
-    </tbody>
-</table>
+        <aside>
+            <h2>Nota:</h2>
+            <p> Todas las tarifas incluyen <em>casco y candado</em>. Los recorridos salen <em>sábados y
+                domingos
+                a las 7:00
+                a. m</em>. <br>
+                <strong>Qué llevar:</strong> <em>ropa cómoda, agua, protector solar y documento de
+                    identidad</em>.
+            </p>
+        </aside>
 
-<p><strong>Nota:</strong> Todas las tarifas incluyen <i>casco y candado</i>. Los recorridos salen <i>sábados y domingos
-    a las 7:00
-    a. m</i>. <br><strong>Qué llevar:</strong> <i>ropa cómoda, agua, protector solar y documento de identidad</i>.</p>
-
-<a href="reservas.html">Reservar ahora</a>
-<hr>
+        <a href="reservas.html">Reservar ahora</a>
+    </section>
+    <hr>
+</main>
 <footer>
-    <h4>Rueda Libre</h4>
+    <h3>Rueda Libre</h3>
     <a href="mailto:juan.david.carreno.arias01@gmail.com">Contacto</a>
     <p>2026</p>
 </footer>
