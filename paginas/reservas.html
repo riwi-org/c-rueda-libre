@@ -7,7 +7,7 @@
 <body>
 
 <header>
-
+    <!--navbar-->
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -16,35 +16,121 @@
         </ul>
     </nav>
 </header>
+<main>
+    <h1>Reserva tu bicicleta</h1>
+    <a href="mailto:juan.david.carreno.arias01@gmail.com">Contacto</a>
+    <dl>
+        <dt>Lunes</dt>
+        <dd>7:00 a. m. - 7:00 p. m.</dd>
 
-<h1>Reserva tu bicicleta</h1>
-<a href="mailto:juan.david.carreno.arias01@gmail.com">Contacto</a>
-<dl>
-    <dt>Lunes</dt>
-    <dd>7:00 a. m. - 7:00 p. m.</dd>
+        <dt>Martes</dt>
+        <dd>7:00 a. m. - 7:00 p. m.</dd>
 
-    <dt>Martes</dt>
-    <dd>7:00 a. m. - 7:00 p. m.</dd>
+        <dt>Miercoles</dt>
+        <dd>7:00 a. m. - 7:00 p. m.</dd>
 
-    <dt>Miercoles</dt>
-    <dd>7:00 a. m. - 7:00 p. m.</dd>
+        <dt>Jueves</dt>
+        <dd>7:00 a. m. - 7:00 p. m.</dd>
 
-    <dt>Jueves</dt>
-    <dd>7:00 a. m. - 7:00 p. m.</dd>
+        <dt>Viernes</dt>
+        <dd>7:00 a. m. - 7:00 p. m.</dd>
 
-    <dt>Viernes</dt>
-    <dd>7:00 a. m. - 7:00 p. m.</dd>
+        <dt>Sabado</dt>
+        <dd>6:00 a. m. a 2:00 p. m.</dd>
 
-    <dt>Sabado</dt>
-    <dd>6:00 a. m. a 2:00 p. m.</dd>
+        <dt>Domingo</dt>
+        <dd>6:00 a. m. a 2:00 p. m.</dd>
 
-    <dt>Domingo</dt>
-    <dd>6:00 a. m. a 2:00 p. m.</dd>
+        <dt>Días festivos</dt>
+        <dd>6:00 a. m. a 2:00 p. m.</dd>
+    </dl>
+    <hr>
+    <!-- Formulario de reservas -->
+    <section id="form">
+        <h2>Formulario de reserva</h2>
 
-    <dt>Días festivos</dt>
-    <dd>6:00 a. m. a 2:00 p. m.</dd>
-</dl>
-<hr>
+        <form action="" method="post">
+
+            <!-- Datos personales -->
+            <fieldset class="tus-datos">
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required><br>
+
+                <label for="documento">Número de documento</label>
+                <input type="text" id="documento" name="documento" placeholder="Ingrese su número de documento"
+                       required><br>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br>
+
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" placeholder="Ingrese su celular">
+            </fieldset>
+
+            <!-- Alquiler de bicicleta -->
+            <fieldset class="tu-alquiler">
+                <legend>Alquiler</legend>
+
+                <label for="date">Fecha que desea alquilar la bicicleta</label>
+                <input type="date" id="date" name="fecha" required><br>
+
+                <label for="tipo-bicicleta">Tipo de bicicleta</label>
+                <select id="tipo-bicicleta" name="tipo_bicicleta">
+                    <option value="ur">Urbana</option>
+                    <option value="mo">Montaña</option>
+                    <option value="el">Eléctrica</option>
+                </select><br>
+
+                <!-- Selección de Plan -->
+                <p>Tipo de plan que desea tomar:</p>
+                <input type="radio" name="plan" id="plan-1h" value="1h">
+                <label for="plan-1h">1 hora</label>
+
+                <input type="radio" name="plan" id="plan-medio" value="medio_dia">
+                <label for="plan-medio">Medio día</label>
+
+                <input type="radio" name="plan" id="plan-completo" value="dia_completo">
+                <label for="plan-completo">Día completo</label><br>
+
+                <label for="cantidad-bicicletas">¿Cuántas bicicletas vas a llevar?</label>
+                <input type="number" id="cantidad-bicicletas" name="cantidad_bicicletas" min="1" placeholder="1"><br>
+
+                <!-- Selección de Ruta -->
+                <p>Ruta a tomar:</p>
+                <input type="radio" name="ruta" id="ruta-ninguna" value="ninguna">
+                <label for="ruta-ninguna">No tomar ruta</label>
+
+                <input type="radio" name="ruta" id="ruta-1" value="ruta_1">
+                <label for="ruta-1">Ruta 1</label>
+
+                <input type="radio" name="ruta" id="ruta-2" value="ruta_2">
+                <label for="ruta-2">Ruta 2</label>
+
+                <input type="radio" name="ruta" id="ruta-3" value="ruta_3">
+                <label for="ruta-3">Ruta 3</label>
+            </fieldset>
+
+            <!-- Confirmación -->
+            <fieldset class="confirmacion">
+                <legend>Confirmación</legend>
+
+                <label for="comentario">Comentario</label><br>
+                <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
+
+                <!-- Checkbox de políticas bien vinculado -->
+                <input type="checkbox" id="politicas" name="politicas" required>
+                <label for="politicas">
+                    He leído y acepto las <a href="tarifas.html" target="_blank">políticas de alquiler</a>
+                </label><br><br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+
+        </form>
+    </section>
+</main>
 <footer>
     <h4>Rueda Libre</h4>
     <a href="mailto:juan.david.carreno.arias01@gmail.com">Contacto</a>
