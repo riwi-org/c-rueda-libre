@@ -56,17 +56,26 @@
                 <legend>Datos personales</legend>
 
                 <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" minlength="3" required><br>
 
                 <label for="documento">Número de documento</label>
-                <input type="text" id="documento" name="documento" placeholder="Ingrese su número de documento"
-                       required><br>
+                <input type="text" id="documento" name="documento" placeholder="Ingrese su número de documento" minlength="6" maxlength="10" aria-describedby="info-documento" pattern="\d{6,10}" required>
+                <small id="info-documento">Solo números, entre 6 y 10 dígitos.</small><br>
 
                 <label for="email">Correo electrónico</label>
                 <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br>
 
                 <label for="celular">Celular</label>
-                <input type="tel" id="celular" name="celular" placeholder="Ingrese su celular">
+                <input type="tel" id="celular" name="celular" placeholder="Ingrese su celular" pattern="^3\d{9}$" aria-describedby="info-input" required>
+                <!--^3 fuerza al usuario a empezar con el numero 3-->
+                <!--\d require que los siguientes caracteres sean digitos-->
+                <!--{9} especifica la cantidad exacta que debe haber despues de \d (como empezamos con 3 siempre ya se cumple la condicion de 10 digitos)-->
+                <!--$ especifica que es limite del input, luego de escribir esos 10 digitos no podrá enviar enviar bien la información (lo deja escribir más pero no cumple con el limitante)-->
+                <!--aria-describedby="" crea un enlace intern con <small> por medio del id, ayudando al lector elementos del navegador interpretar los dos a la vez -->
+
+                <small id="info-input">Empieza con 3 y tiene un máximo de 10 dígitos incluyendo el 3</small>
+
+
             </fieldset>
 
             <!-- Alquiler de bicicleta -->
@@ -74,10 +83,10 @@
                 <legend>Alquiler</legend>
 
                 <label for="date">Fecha que desea alquilar la bicicleta</label>
-                <input type="date" id="date" name="fecha" required><br>
+                <input type="date" id="date" name="fecha" min="2026-11-01" max="2026-12-31" required><br>
 
                 <label for="tipo-bicicleta">Tipo de bicicleta</label>
-                <select id="tipo-bicicleta" name="tipo_bicicleta">
+                <select id="tipo-bicicleta" name="tipo_bicicleta" required>
                     <option value="ur">Urbana</option>
                     <option value="mo">Montaña</option>
                     <option value="el">Eléctrica</option>
@@ -85,7 +94,7 @@
 
                 <!-- Selección de Plan -->
                 <p>Tipo de plan que desea tomar:</p>
-                <input type="radio" name="plan" id="plan-1h" value="1h">
+                <input type="radio" name="plan" id="plan-1h" value="1h" required>
                 <label for="plan-1h">1 hora</label>
 
                 <input type="radio" name="plan" id="plan-medio" value="medio_dia">
@@ -95,7 +104,7 @@
                 <label for="plan-completo">Día completo</label><br>
 
                 <label for="cantidad-bicicletas">¿Cuántas bicicletas vas a llevar?</label>
-                <input type="number" id="cantidad-bicicletas" name="cantidad_bicicletas" min="1" placeholder="1"><br>
+                <input type="number" id="cantidad-bicicletas" name="cantidad_bicicletas" min="1" max="6" placeholder="1"><br>
 
                 <!-- Selección de Ruta -->
                 <p>Ruta a tomar:</p>
@@ -117,7 +126,7 @@
                 <legend>Confirmación</legend>
 
                 <label for="comentario">Comentario</label><br>
-                <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
+                <textarea name="comentario" id="comentario" cols="50" rows="10" maxlength="300"></textarea><br>
 
                 <!-- Checkbox de políticas bien vinculado -->
                 <input type="checkbox" id="politicas" name="politicas" required>
