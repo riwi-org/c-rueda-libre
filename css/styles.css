@@ -1,0 +1,29 @@
+:root {
+    /*variables de texto*/
+    --titulos: Montserrat, sans-serif;
+    --textos: Open Sans, sans-serif;
+
+    /*variables de colores*/
+    --botones-enlaces: #1E7A4F;
+    --destacados-btn-secundarios: #F39A2B;
+    --titulos-encabezados: #14213D;
+    --fondo: #FAF6EF;
+    --texto-secundario: #5B6470;
+
+    /*variables de espaciado*/
+    --espacio-detalles: 0.5rem; /*8px*/
+    --espacio-general: 1rem; /*16px*/
+    --espacio-espacios-grandes: 2rem; /*32px*/
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: var(--textos);
+    color: var(--texto-secundario);
+
+    h1, h2, h3, h4 {
+        font-family: var(--titulos);
+        color: var(--titulos-encabezados);
+    }
+
+}
