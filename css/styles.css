@@ -21,9 +21,28 @@ body {
     font-family: var(--textos);
     color: var(--texto-secundario);
 
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4 {  /*css anidado*/
         font-family: var(--titulos);
         color: var(--titulos-encabezados);
     }
 
 }
+
+/* : pseudoclase*/
+
+:focus { /*cuando navegamos con tab*/
+    outline: 2px solid var(--botones-enlaces);
+    outline-offset: 2px;
+}
+:hover {  /*cuando pasamos el cursor por encima*/
+    color: var(--texto-secundario);
+}
+
+#menu a {  /* # id*/
+    color: var(--botones-enlaces);
+}
+
+.activo { /* . clase*/
+    color: var(--destacados-btn-secundarios);
+}
+
