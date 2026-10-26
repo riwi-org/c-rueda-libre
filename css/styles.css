@@ -80,6 +80,7 @@ a, button, input, select, textarea {
     text-align: center;
     padding: var(--espacio-general);
     margin: var(--espacio-espacios-grandes);
+    position: relative;
 
     img {
         width: 100%;
@@ -114,4 +115,56 @@ a, button, input, select, textarea {
 
 form * {
     margin: var(--espacio-detalles);
+}
+
+.tipos_bicicletas {
+    border-radius: 10px;
+    border: 1px solid var(--texto-secundario);
+    text-align: center;
+    padding: var(--espacio-detalles);
+    margin: var(--espacio-detalles);
+    position: relative;
+}
+
+.nota {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.boton-flotante {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+.icono-whatsapp {
+    width: 2rem;
+    height: 2rem;
+    fill: #FFFFFF;
+}
+
+.boton-flotante:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a;
+}
+
+.boton-flotante:active {
+    transform: scale(0.95);
 }
