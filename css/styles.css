@@ -16,33 +16,102 @@
     --espacio-espacios-grandes: 2rem; /*32px*/
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--fondo);
     font-family: var(--textos);
     color: var(--texto-secundario);
+    display: block;
 
-    h1, h2, h3, h4 {  /*css anidado*/
+    h1, h2, h3, h4 { /*css anidado*/
         font-family: var(--titulos);
         color: var(--titulos-encabezados);
     }
-
 }
 
-/* : pseudoclase*/
-
-:focus { /*cuando navegamos con tab*/
-    outline: 2px solid var(--botones-enlaces);
-    outline-offset: 2px;
+main {
+    max-width: 75rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--espacio-general);
+    display: block;
 }
-:hover {  /*cuando pasamos el cursor por encima*/
-    color: var(--texto-secundario);
+
+.portada {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--espacio-espacios-grandes);
 }
 
-#menu a {  /* # id*/
+
+a, button, input, select, textarea {
+    &:focus { /* cuando navegamos con tab */
+        outline: 2px solid var(--botones-enlaces);
+        outline-offset: 2px;
+    }
+}
+
+#menu a {
     color: var(--botones-enlaces);
+    text-decoration: none;
+
+    &:hover { /* cuando pasamos el cursor por encima */
+        color: var(--destacados-btn-secundarios);
+    }
 }
 
-.activo { /* . clase*/
+.activo {
     color: var(--destacados-btn-secundarios);
+    font-weight: 600;
 }
 
+.card {
+    border-radius: 30px;
+    background-color: var(--destacados-btn-secundarios);
+    border: 1px solid var(--texto-secundario);
+    text-align: center;
+    padding: var(--espacio-general);
+    margin: var(--espacio-espacios-grandes);
+
+    img {
+        width: 100%;
+    }
+}
+
+.tipos_bicicletas {
+    border-radius: 10px;
+    border: 1px solid var(--texto-secundario);
+    text-align: center;
+    padding: var(--espacio-detalles);
+    margin: var(--espacio-detalles);
+}
+
+.cabecera_tarifas {
+    background-color: var(--destacados-btn-secundarios);
+    border: var(--texto-secundario);
+}
+
+.columnas_tarifas th {
+    background-color: var(--destacados-btn-secundarios);
+    border: var(--texto-secundario);
+}
+
+.cabecera_recorridos {
+    background-color: var(--destacados-btn-secundarios);
+}
+
+.columnas_recorridos th {
+    background-color: var(--destacados-btn-secundarios);
+}
+
+form * {
+    margin: var(--espacio-detalles);
+}

@@ -17,32 +17,24 @@
     <nav id="menu">
         <ul>
             <li class="activo"><a href="#" >Inicio</a></li>
-            <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="paginas/reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
-    <hr>
-</header>
-<main>
-    <nav>
-        <!--navegacion dentro de index-->
-        <ul>
-            <li><a href="#">Inicio</a></li>
             <li><a href="#qsomos">¿Quiénes somos?</a></li>
             <li><a href="#servicios">Nuestros servicios</a></li>
             <li><a href="#alquilar">¿Cómo alquilar?</a></li>
             <li><a href="#encuentranos">Encuéntranos</a></li>
+            <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
+            <li><a href="paginas/reservas.html">Reservas</a></li>
         </ul>
     </nav>
+</header>
+<main>
     <!--hero-->
-    <section>
+    <section class="portada">
         <div class="hero">
             <h1>Rueda libre</h1>
             <p>Bienvenido al mejor alquiler de bicicletas de la ciudad</p>
             <img src="img/bicicleta_rueda_libre.png" alt="portada" height="500px" width="550px">
         </div>
     </section>
-    <hr>
 
     <!--quienes somos-->
     <section id="qsomos">
@@ -51,23 +43,31 @@
             Libre conectamos a locales y visitantes con los mejores espacios de Medellín a través de bicicletas seguras,
             cómodas y listas para rodar, promoviendo un estilo de vida saludable y amigable con el medio ambiente.</p>
     </section>
-    <hr>
 
     <!--servicios-->
     <section id="servicios">
         <h2><em>Nuestros servicios</em></h2>
 
         <!--articulo alquilar-->
-        <article>
+        <article class="card">
             <h3>Alquiler de bicicletas</h3>
             <p>Contamos con una flota moderna de bicicletas urbanas y de montaña para que <strong>recorras la
                 ciudad</strong> a tu propio ritmo, ya sea por horas o por días completos.</p>
             <img src="img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" width="400px" height="350px">
+            <article class="tipos_bicicletas">
+                <h4>Bicicleta eléctrica</h4>
+            </article>
+            <article class="tipos_bicicletas">
+                <h4>Bicicleta de montaña</h4>
+            </article>
+            <article class="tipos_bicicletas">
+                <h4>Bicicleta urbana</h4>
+            </article>
             <a href="paginas/tarifas.html#tabla_tarifas">Consulta las tarifas acá</a>
         </article>
 
         <!--articulo recorrido guiado-->
-        <article>
+        <article class="card">
             <h3>Recorrido guiado</h3>
             <p>Disfruta de nuestros tours guiados donde <strong>descubrirás la historia</strong>, el arte urbano y
                 los
@@ -77,7 +77,7 @@
         </article>
 
         <!--articulo taller-->
-        <article>
+        <article class="card">
             <h3>Taller básico</h3>
             <p>Ofrecemos servicio de <strong>mantenimiento preventivo, ajuste de frenos y cambios</strong> para que tu
                 bicicleta siempre ruede en óptimas condiciones.</p>
@@ -94,7 +94,6 @@
             </ul>
         </article>
     </section>
-    <hr>
 
     <!--como alquilar-->
     <section id="alquilar">
@@ -107,7 +106,6 @@
             <li>¡Disfruta del recorrido y devuélvela al finalizar el tiempo acordado!</li>
         </ol>
     </section>
-    <hr>
 
     <!--encuentranos-->
     <section id="encuentranos">
@@ -115,7 +113,6 @@
         <a href="https://www.google.com/maps/place/Riwi/@6.219101,-75.5861898,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44293f0e114eef:0x99610cdd44c7c081!8m2!3d6.219101!4d-75.5836149!16s%2Fg%2F11l2x8f5ch?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"
            target="_blank">Sede principal</a>
     </section>
-    <hr>
 </main>
 <footer>
     <h4>Rueda Libre</h4>
