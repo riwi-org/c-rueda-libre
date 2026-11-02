@@ -17,10 +17,6 @@
     <nav id="menu">
         <ul>
             <li class="activo"><a href="#">Inicio</a></li>
-            <li><a href="#qsomos">¿Quiénes somos?</a></li>
-            <li><a href="#servicios">Nuestros servicios</a></li>
-            <li><a href="#alquilar">¿Cómo alquilar?</a></li>
-            <li><a href="#encuentranos">Encuéntranos</a></li>
             <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
             <li><a href="paginas/reservas.html">Reservas</a></li>
         </ul>
@@ -33,8 +29,8 @@
         <div class="hero">
             <h1>Rueda libre</h1>
             <p>Bienvenido al mejor alquiler de bicicletas de la ciudad</p>
-            <img src="img/bicicleta_rueda_libre.png" alt="portada" height="500px" width="550px">
         </div>
+        <img src="img/bicicleta_rueda_libre.png" alt="portada" loading="lazy">
     </section>
 
     <!--quienes somos-->
@@ -50,51 +46,144 @@
         <h2><em>Nuestros servicios</em></h2>
 
         <!--articulo alquilar-->
-        <article class="card">
-            <h3>Alquiler de bicicletas</h3>
-            <p>Contamos con una flota moderna de bicicletas urbanas y de montaña para que <strong>recorras la
-                ciudad</strong> a tu propio ritmo, ya sea por horas o por días completos.</p>
-            <img src="img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" width="400px" height="350px">
-            <article class="tipos_bicicletas">
-                <span class="nota">Nuevo</span>
-                <h4>Bicicleta eléctrica</h4>
+        <div>
+            <article class="card">
+                <h3>Alquiler de bicicletas</h3>
+                <p>Contamos con una flota moderna de bicicletas urbanas y de montaña para que <strong>recorras la
+                    ciudad</strong> a tu propio ritmo, ya sea por horas o por días completos.</p>
+                <img src="img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px" height="350px">
+                <a href="paginas/tarifas.html#tabla_tarifas">Consulta las tarifas acá</a>
             </article>
-            <article class="tipos_bicicletas">
-                <h4>Bicicleta de montaña</h4>
+
+            <!--articulo recorrido guiado-->
+            <article class="card">
+                <h3>Recorrido guiado</h3>
+                <p>Disfruta de nuestros tours guiados donde <strong>descubrirás la historia</strong>, el arte urbano y
+                    los
+                    rincones más emblemáticos de Medellín de manera segura.</p>
+                <img src="img/ruta_bicicleta_guiada_rueda_libre.png" alt="ruta" loading="lazy" width="400px" height="350px">
+                <a href="paginas/tarifas.html#tabla-recorridos">Consulta los recorridos acá</a>
             </article>
-            <article class="tipos_bicicletas">
-                <h4>Bicicleta urbana</h4>
+
+            <!--articulo taller-->
+            <article class="card">
+                <h3>Taller básico</h3>
+                <p>Ofrecemos servicio de <strong>mantenimiento preventivo, ajuste de frenos y cambios</strong> para que
+                    tu
+                    bicicleta siempre ruede en óptimas condiciones.</p>
+                <img src="img/taller_basico_rueda_libre.png" alt="bicicleta_taller" loading="lazy" width="400px" height="350px">
             </article>
-            <a href="paginas/tarifas.html#tabla_tarifas">Consulta las tarifas acá</a>
-        </article>
+        </div>
+        <!-- beneficios -->
+        <h4>Beneficios de usar nuestros servicios</h4>
+        <ul>
+            <li>Tarifas económicas y accesibles para todos.</li>
+            <li>Equipamiento de seguridad incluido (casco y kit básico).</li>
+            <li>Asistencia vial durante tu recorrido en la ciudad.</li>
+        </ul>
+    </section>
 
-        <!--articulo recorrido guiado-->
-        <article class="card">
-            <h3>Recorrido guiado</h3>
-            <p>Disfruta de nuestros tours guiados donde <strong>descubrirás la historia</strong>, el arte urbano y
-                los
-                rincones más emblemáticos de Medellín de manera segura.</p>
-            <img src="img/ruta_bicicleta_guiada_rueda_libre.png" alt="ruta" width="400px" height="350px">
-            <a href="paginas/tarifas.html#tabla-recorridos">Consulta los recorridos acá</a>
-        </article>
+    <!--nuestra flota-->
+    <section id="nuestra_flota">
+        <h2>Nuestra flota</h2>
+        <div class="grid_flota">
+            <article class="card_flota">
+                <img src="img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px" height="350px">
+                <h3>Urbana clasica</h3>
+                <p>Cómoda y liviana para las ciclorutas.</p>
+                <p>$10.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Urbana Clásica</a>
+            </article>
+            <article class="card_flota">
+                <img src="img/alquiler_bicicleta_rueda_libre.png " alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Urbana Plegable</h3>
+                <p>Se dobla en segundos; ideal para combinar con el metro.</p>
+                <p>$12.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Urbana Plegable</a>
+            </article>
+            <article class="card_flota">
+                <img src=" img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Montaña Trail</h3>
+                <p>Suspensión delantera y 21 cambios para las subidas.</p>
+                <p>$15.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Montaña Trail</a>
+            </article>
+            <article class="card_flota">
+                <img src=" img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Gravel aventura</h3>
+                <p>Para rutas mixtas de asfalto y destapado.</p>
+                <p>$18.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Gravel Aventura</a>
+            </article>
+            <article class="card_flota">
+                <img src=" img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Eléctrica Urbana</h3>
+                <span>Nuevo</span>
+                <p>Asistencia eléctrica con 45 km de autonomía.</p>
+                <p>$25.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Eléctrica Urbana</a>
+            </article>
+            <article class="card_flota">
+                <img src=" img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Infantil</h3>
+                <p>Para niños de 6 a 10 años.</p>
+                <p>$8.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Infantil</a>
+            </article>
+            <article class="card_flota">
+                <img src=" img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Tándem</h3>
+                <p>Para dos personas; perfecta para pasear en pareja.</p>
+                <p>$20.000 / hora</p>
+                <a href="paginas/reservas.html">Reservar Tándem</a>
+            </article>
+        </div>
 
-        <!--articulo taller-->
-        <article class="card">
-            <h3>Taller básico</h3>
-            <p>Ofrecemos servicio de <strong>mantenimiento preventivo, ajuste de frenos y cambios</strong> para que tu
-                bicicleta siempre ruede en óptimas condiciones.</p>
-            <img src="img/taller_basico_rueda_libre.png" alt="bicicleta_taller" width="400px" height="350px">
-        </article>
+    </section>
 
-        <!--articulo beneficios-->
-        <article>
-            <h4>Beneficios de usar nuestros servicios</h4>
-            <ul>
-                <li>Tarifas económicas y accesibles para todos.</li>
-                <li>Equipamiento de seguridad incluido (casco y kit básico).</li>
-                <li>Asistencia vial durante tu recorrido en la ciudad.</li>
-            </ul>
-        </article>
+    <section id="nuestras_rutas">
+        <h2>Nuestras rutas</h2>
+        <div class="grid_rutas">
+            <article class="card">
+                <img src="img/alquiler_bicicleta_rueda_libre.png " alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Río y Parques</h3>
+                <ul>
+                    <li>Nivel Fácil</li>
+                    <li>12 km</li>
+                    <li>2 h</li>
+                </ul>
+                <a href="paginas/reservas.html">Ver tarifa de Río y Parques</a>
+            </article>
+            <article class="card">
+                <img src="img/alquiler_bicicleta_rueda_libre.png " alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Sabores de Barrio</h3>
+                <ul>
+                    <li>Nivel Medio</li>
+                    <li>18 km</li>
+                    <li>3 h</li>
+                </ul>
+                <a href="paginas/reservas.html">Ver tarifa de Sabores de Barrio</a>
+            </article>
+            <article class="card">
+                <img src=" img/alquiler_bicicleta_rueda_libre.png" alt="alquiler_bicicleta" loading="lazy" width="400px"
+                     height="350px">
+                <h3>Reto Las Palmas</h3>
+                <ul>
+                    <li>Nivel Difícil</li>
+                    <li>25 km</li>
+                    <li>4 h</li>
+                </ul>
+                <a href="paginas/reservas.html">Ver tarifa de Reto Las Palmas</a>
+            </article>
+        </div>
     </section>
 
     <!--como alquilar-->
@@ -112,15 +201,15 @@
     <!--encuentranos-->
     <section id="encuentranos">
         <h2>¿Dónde encontranos?</h2>
-        <a href="https://www.google.com/maps/place/Riwi/@6.219101,-75.5861898,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44293f0e114eef:0x99610cdd44c7c081!8m2!3d6.219101!4d-75.5836149!16s%2Fg%2F11l2x8f5ch?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D"
-           target="_blank">Sede principal</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.337817944879!2d-75.58618982324388!3d6.2191063266223265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi!5e0!3m2!1sen!2sco!4v1793648713211!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </section>
 
 
 </main>
 <footer>
     <h4>Rueda Libre</h4>
-    <a href="mailto:juan.david.carreno.arias01@gmail.com">Contacto</a>
+    <p>Contacto: <a href="mailto:juan.david.carreno.arias01@gmail.com">juan.david.carreno.arias01@gmail.com</a></p>
+
     <dl>
         <dt>Lunes-Viernes</dt>
         <dd>7:00 a. m. - 7:00 p. m.</dd>
