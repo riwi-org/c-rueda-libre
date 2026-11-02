@@ -68,6 +68,29 @@ a, button, input, select, textarea {
     }
 }
 
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        gap: var(--espacio-general);
+        flex-wrap: wrap;
+        margin: var(--espacio-general);
+    }
+    & p {
+        display: flex;
+        align-items: center;
+        margin: var(--espacio-general);
+        font-weight: bold;
+    }
+}
+
 .activo {
     color: var(--destacados-btn-secundarios);
     font-weight: 600;
@@ -167,4 +190,19 @@ form * {
 
 .boton-flotante:active {
     transform: scale(0.95);
+}
+
+
+
+footer > *:not(:last-child){
+    display:flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--texto-secundario);
+    margin: var(--espacio-general);
+}
+footer dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
