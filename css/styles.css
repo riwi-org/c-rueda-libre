@@ -43,15 +43,6 @@ main {
     display: block;
 }
 
-.portada {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--espacio-espacios-grandes);
-}
-
-
 a, button, input, select, textarea {
     &:focus { /* cuando navegamos con tab */
         outline: 2px solid var(--botones-enlaces);
@@ -60,7 +51,7 @@ a, button, input, select, textarea {
 }
 
 #menu a {
-    color: var(--botones-enlaces);
+    color: var(--fondo);
     text-decoration: none;
 
     &:hover { /* cuando pasamos el cursor por encima */
@@ -72,6 +63,7 @@ a, button, input, select, textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #14213D;
 
     & ul {
         display: flex;
@@ -82,7 +74,9 @@ a, button, input, select, textarea {
         gap: var(--espacio-general);
         flex-wrap: wrap;
         margin: var(--espacio-general);
+        padding: var(--espacio-general);
     }
+
     & p {
         display: flex;
         align-items: center;
@@ -94,20 +88,6 @@ a, button, input, select, textarea {
 .activo {
     color: var(--destacados-btn-secundarios);
     font-weight: 600;
-}
-
-.card {
-    border-radius: 30px;
-    background-color: var(--destacados-btn-secundarios);
-    border: 1px solid var(--texto-secundario);
-    text-align: center;
-    padding: var(--espacio-general);
-    margin: var(--espacio-espacios-grandes);
-    position: relative;
-
-    img {
-        width: 100%;
-    }
 }
 
 .tipos_bicicletas {
@@ -192,17 +172,321 @@ form * {
     transform: scale(0.95);
 }
 
-
-
-footer > *:not(:last-child){
-    display:flex;
-    justify-content: space-around;
-    border-bottom: 1px solid var(--texto-secundario);
-    margin: var(--espacio-general);
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    margin: var(--espacio-espacios-grandes);
+    padding: 20px;
+    align-items: center;
+    border-top: 1px solid var(--texto-secundario);
 }
+
 footer dl {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--espacio-espacios-grandes);
+
+    & img {
+        border-radius: 5%;
+        margin-left: var(--espacio-espacios-grandes);
+    }
+
+    & h1 {
+        font-family: var(--titulos);
+        font-weight: 600;
+    }
+}
+
+#servicios {
+    padding: var(--espacio-espacios-grandes);
+    margin: var(--espacio-espacio-grandes);
+}
+
+#servicios div {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #c8cdd1;
+    text-align: center;
+    padding: var(--espacio-espacios-grandes);
+    margin: var(--espacio-general);
+    width: 100%;
+    max-width: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    row-gap: var(--espacio-general);
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    & img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    & a {
+        color: var(--botones-enlaces);
+    }
+}
+
+
+.grid_flota {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 50px;
+
+
+    & .card_flota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #c8cdd1;
+        border-radius: 10px;
+        padding: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        row-gap: var(--espacio-general);
+        background-color: #FFFFFF;
+    }
+
+    & .card_flota:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    & .card_flota span {
+        display: flex;
+        background-color: var(--destacados-btn-secundarios);
+        padding: var(--espacio-detalles);
+        border-radius: 5px;
+        align-items: end;
+
+    }
+
+    & img {
+        border: 100px;
+        height: auto;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    & a {
+        border: 1px solid var(--texto-secundario);
+        border-radius: 5px;
+        background-color: var(--botones-enlaces);
+        color: var(--fondo);
+        padding: var(--espacio-detalles);
+        text-decoration: none;
+        align-self: start;
+    }
+
+    & a:hover {
+        background-color: #4E1BA1;
+    }
+}
+
+.grid_rutas {
+    display: flex;
+    flex-direction: column;
+
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    & a {
+        color: var(--botones-enlaces);
+    }
+}
+
+#alquilar {
+    margin: var(--espacio-espacios-grandes);
+
+    & p {
+        margin-top: var(--espacio-general);
+        margin-bottom: var(--espacio-general);
+    }
+
+    & ol li {
+        padding: 5px;
+    }
+}
+
+#encuentranos {
+    display: flex;
+    flex-direction: column;
+    padding: var(--espacio-detalles);
+    align-items: center;
+    gap: 20%;
+
+    & h2 {
+        margin-left: var(--espacio-espacios-grandes);
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+        margin: var(--espacio-espacios-grandes);
+        padding: 20px;
+        align-items: center;
+        border-top: 1px solid var(--texto-secundario);
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: var(--espacio-espacios-grandes);
+
+        & img {
+            border-radius: 5%;
+            margin-left: var(--espacio-espacios-grandes);
+        }
+
+        & h1 {
+            font-family: var(--titulos);
+            font-weight: 600;
+        }
+    }
+
+    #servicios div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grid_rutas {
+        display: flex;
+        flex-direction: row;
+
+        & ul {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        & a {
+            color: var(--botones-enlaces);
+        }
+    }
+
+    #encuentranos {
+        display: flex;
+        flex-direction: row;
+        padding: var(--espacio-detalles);
+        align-items: center;
+        gap: 20%;
+
+        & h2 {
+            margin-left: var(--espacio-espacios-grandes);
+        }
+    }
+
+    .grid_flota {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+        padding: 50px;
+
+    }
+}
+
+
+/*escritorio*/
+@media (min-width: 1200px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+        margin: var(--espacio-espacios-grandes);
+        padding: 20px;
+        align-items: center;
+        border-top: 1px solid var(--texto-secundario);
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: var(--espacio-espacios-grandes);
+
+        & img {
+            border-radius: 5%;
+            margin-left: var(--espacio-espacios-grandes);
+        }
+
+        & h1 {
+            font-family: var(--titulos);
+            font-weight: 600;
+        }
+    }
+
+    #servicios div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grid_rutas {
+        display: flex;
+        flex-direction: row;
+
+        & ul {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        & a {
+            color: var(--botones-enlaces);
+        }
+    }
+
+    #encuentranos {
+        display: flex;
+        flex-direction: row;
+        padding: var(--espacio-detalles);
+        align-items: center;
+        gap: 20%;
+
+        & h2 {
+            margin-left: var(--espacio-espacios-grandes);
+        }
+    }
+
+    .grid_flota {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+        padding: 50px;
+
+    }
 }
