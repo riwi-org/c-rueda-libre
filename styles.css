@@ -1,0 +1,106 @@
+:root {
+            --ink: #172a26;
+            --forest: #174b3e;
+            --lime: #d8f36a;
+            --paper: #f5f4ed;
+            --muted: #66736d;
+        }
+
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "DM Sans", sans-serif;
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: "Space Grotesk", sans-serif;
+            letter-spacing: 0;
+        }
+
+        .navbar {
+            background: var(--paper);
+        }
+
+        .navbar-brand span {
+            color: var(--forest);
+        }
+
+        .nav-link {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .nav-link:hover, .nav-link:focus {
+            color: var(--forest);
+        }
+
+        .btn-forest {
+            background: var(--forest);
+            border-color: var(--forest);
+            color: #fff;
+        }
+
+        .btn-forest:hover, .btn-forest:focus {
+            background: #10392f;
+            border-color: #10392f;
+            color: #fff;
+        }
+
+        .hero {
+            background: var(--forest);
+            color: #fff;
+        }
+
+        .hero h1 {
+            max-width: 13ch;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: .98;
+        }
+
+        .hero-copy {
+            color: #d8e6db;
+            max-width: 34rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 1.18 / 1;
+            object-fit: cover;
+        }
+
+        .eyebrow {
+            color: var(--forest);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .hero .eyebrow {
+            color: var(--lime);
+        }
+
+        .feature-number {
+            color: var(--forest);
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .service-item {
+            border-top: 1px solid #cbd1c8;
+        }
+
+        .community-band {
+            background: var(--lime);
+        }
+
+        footer {
+            background: var(--ink);
+            color: #e8eee8;
+        }
+
+        footer a {
+            color: #e8eee8;
+        }
